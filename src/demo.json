@@ -1,0 +1,101 @@
+{
+    "cluster": {
+    "name": "demo-eks-cluster",
+    "provider": "AWS",
+    "version": "1.30",
+    "region": "us-east-1",
+    "createdAt": "2023-09-06T12:26:34.176000+05:30",
+    "status": "ACTIVE",
+    "tags": {
+    "cluster_name": "demo",
+    "environment": "demo",
+    "sprinto": "prod",
+    "Customer Category": "Demo",
+    "env": "prod",
+    "lyric-compute-pool": "true",
+    "type": "prod"
+    },
+    "vpcId": "vpc-0b5d9600523ef709d",
+    "serviceIpv4Cidr": "172.20.0.0/16",
+    "platformVersion": "eks.23",
+    "nodeGroups": [
+    {
+    "name": "accelerated-demo-node-group",
+    "status": "ACTIVE",
+    "instanceType": "r6a.4xlarge",
+    "minSize": 0,
+    "maxSize": 1,
+    "desiredSize": 0,
+    "diskSize": 50,
+    "capacityType": "ON_DEMAND",
+    "amiType": "AL2_x86_64"
+    },
+    {
+    "name": "airbyte-demo-node-group",
+    "status": "ACTIVE",
+    "instanceType": "t3a.xlarge",
+    "minSize": 0,
+    "maxSize": 1,
+    "desiredSize": 0,
+    "diskSize": 250,
+    "capacityType": "ON_DEMAND",
+    "amiType": "AL2_x86_64"
+    },
+    {
+    "name": "apps-demo",
+    "status": "ACTIVE",
+    "instanceType": "m7a.xlarge",
+    "minSize": 6,
+    "maxSize": 9,
+    "desiredSize": 9,
+    "diskSize": 150,
+    "capacityType": "ON_DEMAND",
+    "amiType": "AL2_x86_64"
+    },
+    {
+    "name": "clickhouse-demo",
+    "status": "ACTIVE",
+    "instanceType": "m7a.2xlarge",
+    "minSize": 1,
+    "maxSize": 1,
+    "desiredSize": 1,
+    "diskSize": 150,
+    "capacityType": "ON_DEMAND",
+    "amiType": "AL2_x86_64"
+    },
+    {
+    "name": "dedicated-demo-node-group",
+    "status": "ACTIVE",
+    "instanceType": "r5a.8xlarge",
+    "minSize": 0,
+    "maxSize": 1,
+    "desiredSize": 0,
+    "diskSize": 100,
+    "capacityType": "ON_DEMAND",
+    "amiType": "AL2_x86_64"
+    },
+    {
+    "name": "iceberg-demo",
+    "status": "ACTIVE",
+    "instanceType": "c6a.8xlarge",
+    "minSize": 1,
+    "maxSize": 10,
+    "desiredSize": 1,
+    "diskSize": 50,
+    "capacityType": "ON_DEMAND",
+    "amiType": "AL2_x86_64"
+    },
+    {
+    "name": "on-note-node-pool",
+    "status": "ACTIVE",
+    "instanceType": "r6a.16xlarge",
+    "minSize": 0,
+    "maxSize": 1,
+    "desiredSize": 1,
+    "diskSize": 200,
+    "capacityType": "ON_DEMAND",
+    "amiType": "BOTTLEROCKET_x86_64"
+    }
+    ]
+    }
+}
